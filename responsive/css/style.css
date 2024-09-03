@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+br.clear {
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+}
+
+/* -----------------------------------------
+ レイアウトCSS読み込み
+----------------------------------------- */
+body {
+	background-color: #ffffff;
+	color: #6a6a6a;
+	font-size: 12px;
+	font-family: arial, helvetica, "hiragino kaku gothic pro", "ヒラギノ角ゴ pro w3", "メイリオ", meiryo, "ＭＳ Ｐゴシック";
+	letter-spacing: 1px;
+	overflow-wrap: break-word;
+	background-image: none;
+}
+
+header {
+	width: 100%;
+	background-color: #abcdef;
+}
+
+.header_inner {
+	width: 992px;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+}
+
+main {
+	width: 992px;
+	background-color: #fedcba;
+	margin: 0 auto;
+}
+
+.main_inner {
+	margin: 0;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.contents {
+	flex: 0 0 768px;
+	margin: 0 0 40px;
+	background-color: #efcdab;
+}
+
+.contents_inner {
+	margin: 0;
+}
+
+nav {
+	flex: auto;
+	margin: 0 0 40px 0;
+	background-color: #abefcd;
+}
+
+.nav_inner {
+	margin: 0 40px 0 0;
+}
+
+footer {
+	width: 100%;
+	background: #dcbafe;
+}
+
+.footer_inner {
+	width: 992px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+/* --------------------------------------
+  ナビゲーション
+--------------------------------------- */
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-weight: bolder;
+}
+
+nav ul li a {
+  height: 100%;
+  display: block;
+  padding: 0 10px 18px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #bcbcbc;
+}
+
+nav ul li .active {
+  color: #bcbcbc;
+}
+
+/* -----------------------------------------
+
+Smart Phone, Tablet
+
+----------------------------------------- */
+
+@media screen and (max-width: 992px) {
+
+	body {
+		background: none;
+		background-color: #FFFFFF;
+		font-size: 13px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border: none;
+		vertical-align: middle;
+	}
+
+	header {
+		padding: 0;
+	}
+
+	.header_inner {
+		max-width: 768px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	main {
+		max-width: 768px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.main_inner {
+		margin: 0 20px;
+		flex-direction: column;
+	}
+
+	.contents {
+		flex: 1;
+		margin: 0 0 20px;
+		width: 100%;
+	}
+
+	.contents_inner {
+		margin: 0 0 20px 0;
+	}
+
+	nav {
+		flex: 1;
+		margin: 0;
+		width: 100%;
+	}
+
+	.nav_inner {
+		margin: 0 -20px;
+	}
+
+	.footer_inner {
+		max-width: 768px;
+		width: 100%;
+		border-top: none;
+		padding: 20px 0;
+		margin: 0 auto;
+	}
+
+	.footer_inner a:link {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	.footer_inner a:visited {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	.footer_inner a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	.footer_inner a:active {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	/* --------------------------------------
+	ナビゲーション
+	--------------------------------------- */
+
+	nav ul {
+		border-top: 1px solid #d0d0d0;
+	}
+
+	nav ul li {
+		border-bottom: 1px solid #d0d0d0;
+	}
+
+	nav ul li a {
+		height: 100%;
+		display: block;
+		margin: 0;
+		padding: 15px 20px;
+		font-size: 14px;
+		text-decoration: none;
+		background-size: 30px 18px;
+		background-image: url(../img/nav_arrow_1.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+
+	nav ul li .active {
+		color: #ffffff;
+		background-size: 30px 18px;
+		background-color: #6a6a6a;
+		background-image: url(../img/nav_arrow_white.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+
+	nav ul li a:hover {
+		font-weight: bolder;
+		background-size: 30px 18px;
+		background-image: url(../img/nav_arrow_white.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-color: #6a6a6a;
+		color: #ffffff;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:active {
+		text-decoration: underline;
+	}
+}
