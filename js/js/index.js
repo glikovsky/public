@@ -22,6 +22,12 @@ $(function() {
 			file = "./contents/" + id + ".html";
 		}
 		$("#main").load(file);
+
+		let url = "/public/js/";
+		if (id !== "" && id !== "home") {
+			url = "?c=" + id;
+		}
+		history.replaceState(file, title, url);
 	}
 
 	$("nav .nav_item").click(function(event) {
