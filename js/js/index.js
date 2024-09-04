@@ -23,7 +23,7 @@ $(function() {
 		}
 		$("#main").load(file);
 
-		let url = "/public/js/";
+		let url = $(location).attr("pathname");
 		if (id !== "" && id !== "home") {
 			url = "?c=" + id;
 		}
