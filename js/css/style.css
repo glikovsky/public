@@ -19,7 +19,7 @@ header {
 	width: 100%;
 	display: inline-block;
 	align-items: center;
-	max-height: 64px;
+	height: 64px;
 	margin: 0 auto;
 	padding: 15px 0;
 }
@@ -152,7 +152,7 @@ footer {
 		height: auto;
 		margin-right: 15px;
 		opacity: 1;
-		max-height: 64px;
+		height: 64px;
 	}
 
 	header nav ul {
