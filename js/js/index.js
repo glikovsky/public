@@ -38,8 +38,8 @@ $(function() {
 	}
 
 	// モバイルデバイスの場合に表示するバーガーメニューの動作
-	$(".nav_toggle").click(function() {
-		$("nav").toggleClass("nav_active");
-		$(".nav_toggle").children().toggleClass("active");
+	$("#nav_toggle").click(function() {
+		$(this).toggleClass("open");
+		$("#global_nav").slideToggle();
 	})
 });
