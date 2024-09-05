@@ -3,18 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>jsでページ切り替え</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<title>glikovsky</title>
 </head>
 <body>
-	<nav>
-		<ul>
-			<li class="nav_item" id="home">HOME</li>
-			<li class="nav_item" id="about">このサイトについて</li>
-			<li class="nav_item" id="contact">お問い合わせ</li>
-		</ul>
-	</nav>
-	<div id="main">
-	</div>
+	<header>
+		<p><a href="./" class="header_title">glikovsky</a></p>
+		<nav>
+			<ul class="nav_list">
+				<li><a href="./" class="nav_item" id="home">HOME</a></li>
+				<li><a href="./?c=about" class="nav_item" id="about">このサイトについて</a></li>
+				<li><a href="./?c=profile" class="nav_item" id="profile">プロフィール</a></li>
+				<li><a href="./?c=contact" class="nav_item" id="contact">お問い合わせ</a></li>
+			</ul>
+		</nav>
+		<div class="nav_toggle">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</header>
+	<main>
+	</main>
+	<footer>
+		<p>&copy; 2024 glikovsky</p>
+	</footer>
 	<script src="./js/jquery-3.7.1.min.js"></script>
 	<script src="./js/index.js"></script>
 </body>
