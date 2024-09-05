@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* カスタム変数 */
 :root {
 	--main-bg-color: black;
@@ -95,6 +99,7 @@ header nav ul li {
 	border-radius: 2px;
 	background-color: lightgray;
 	vertical-align: top;
+	transition: all 0.4s ease-in-out;
 }
 
 #nav_toggle span:first-child {
@@ -127,7 +132,7 @@ main {
 	padding: 79px 15px 0px;
 	max-width: 1024px;
 	height: 100vh;
-	}
+}
 
 /* フッター */
 footer {
