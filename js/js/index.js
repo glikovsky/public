@@ -12,11 +12,8 @@ $(function() {
 
 	defer.promise().then(function() {
 		// URLからコンテンツを表示
-		let c = $(location).attr("search").replace("?c=", "");
-		if (c.length === 0) {
-			c = "home";
-		}
-		load_contents($("#" + c));
+		let c = $(location).attr("search");
+		load_contents($("a.nav_item[href='./" + c + "']"));
 	});
 
 	/* コンテンツを表示する関数
@@ -24,7 +21,7 @@ $(function() {
 	*/
 	function load_contents(item) {
 		const title_const = conf.title;
-		let id = $(item).attr("id");
+		let id = $(item).attr("href").replace("./", "").replace("?c=", "");
 		let title = title_const;
 		if (id !== "") {
 			title = $(item).html() + " | " + title_const;
